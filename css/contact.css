@@ -1,0 +1,433 @@
+:root {
+    --color-primary-100: #FFF;
+    --color-primary-200: #EAE7DC;
+    --color-primary-300: #D8C3A5;
+    --color-primary-400: #8E8D8A;
+    --color-primary-600: #E98074;
+    --color-primary-700: #E85A4f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+}
+
+.all-sections {
+    max-width: 92rem;
+    margin: 0 auto;
+    float: none;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Abril Fatface', serif;
+}
+
+footer {
+    margin: 0;
+    background-color: var(--color-primary-300);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+section {
+    padding: 1rem;
+}
+
+.section-foto {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+#send-button:hover{
+    cursor: pointer;
+}
+
+/*+++++++++++++++ form ++++++++++++*/
+
+.container-form {
+    background-color: var(--color-primary-200);
+}
+
+.form {
+    display: grid;
+    text-align: left;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    float: none;
+    padding-bottom: 4rem;
+}
+
+.form-item {
+    margin: 0.5rem;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.05rem;
+    border: none;
+}
+
+#email-input-div input{
+    width: 10rem;
+}
+
+#firstname {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#lastname {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#email {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#phone {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#reason {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+#message {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+#message-input{
+    font-size: 1.05rem;
+    border: none;
+    resize: none;
+    width: 42rem;
+    height: 7rem;
+}
+
+#email-option{
+    font-size: 1.05rem;
+    border: none;
+    resize: none;
+    width: 9.75rem;
+    height: 2rem;
+}
+
+#reason-input{
+    font-size: 1.05rem;
+    border: none;
+    resize: none;
+    width: 42rem;
+    height: 2rem;
+
+}
+#button-div{
+    margin-left: 0.5rem;
+}
+#send-button{
+    width: 10rem;
+    background-color: var(--color-primary-600);
+}
+
+/*++++++++++ text ++++++++++++*/
+
+.container-text{
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    float: none;
+}
+
+.container-text h2{
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    margin-top: 0;
+
+}
+.container-text p{
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+
+}
+
+
+/*+++++++++++++++ header, navbar */
+
+.header-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+header {
+    background-color: var(--color-primary-300);
+    position: sticky;
+}
+
+#header-content {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    flex: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    flex: 50%;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.navbar-content {
+    display: none;
+}
+
+.show-navbar {
+    display: inline;
+}
+
+.logo {
+    text-align: center;
+    flex: auto;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .header-div {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    header {
+        position: sticky;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #header-content {
+        padding-left: 5%;
+    }
+
+    h1 {
+        text-align: left;
+        flex: 50%;
+    }
+
+    nav {
+        text-align: right;
+        flex: auto;
+        display: inline;
+        padding: 0.5rem;
+    }
+
+    .navbar-content {
+        display: inline;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    li a:hover::before {
+        content: "";
+        background-color: var(--color-primary-700);
+        width: 100%;
+        height: 15%;
+        position: absolute;
+        animation-name: navbar-animation;
+        animation-duration: 0.5s;
+    }
+
+    li a:hover {
+        color: var(--color-primary-700);
+        transition: 0.5s;
+    }
+
+    nav ul li a {
+        font-size: 1.3rem;
+        position: relative;
+    }
+
+    #menu-checkbox {
+        display: none;
+    }
+
+    path {
+        display: block;
+    }
+
+    .split {
+        display: flex;
+        text-align: left;
+    }
+
+    .section-text {
+        flex: 50%;
+        padding-left: 5%;
+    }
+
+    .section-text p {
+        max-width: 50rem;
+    }
+
+    .section-foto {
+        flex: 50%;
+        text-align: right;
+        padding-right: 1.5rem;
+    }
+
+    /*+++++++++++ navbar color that shows the page you are at*/
+
+    #contact {
+        color: var(--color-primary-700);
+    }
+
+}
+
+@media only screen and (max-width: 799px) {
+    li a {
+        border-bottom: solid;
+    }
+
+    #contact {
+        color: var(--color-primary-700);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .form{
+        max-width: 23rem;
+    }
+    #firstname {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #lastname {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #email {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #phone {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #reason {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #message {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #message-input{
+        width: 20rem;
+    }
+    
+    #reason-input{
+        width: 20rem;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    input {
+        width: 18rem;
+    }
+
+    #email-input-div input{
+        width: 9rem;
+    }
+    #email-option{
+        width: 8.75rem;
+    }
+    #message-input{
+        width: 18rem;
+    }
+    
+    #reason-input{
+        width: 18rem;
+    }
+}
+
+@keyframes navbar-animation {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

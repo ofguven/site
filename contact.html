@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - A Felt Story</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-div all-sections">
+            <div id="header-content">
+                <svg id="menu-checkbox" fill="#EAE7DC" viewBox="0 0 24 24" height="24" width=24>
+                    <path
+                        d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+                </svg>
+                <div class="logo" onclick="window.location.href='index.html'">
+                    <h1>A Felt Story</h1>
+                </div>
+            </div>
+            <nav id="navbar-menu" class="navbar-content">
+                <ul>
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <li><a id="products" href="products.html">Products</a></li>
+                    <li><a id="info" href="info.html">Info</a></li>
+                    <li><a id="contact" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-form">
+        <div>
+            <div class="container-text">
+                <h2>Contact us</h2>
+                <p>Here you can order anything that makeable with felt.
+                Feel free to ask us for anything related to the website and felt.</p>
+            </div>
+            <form action="#" class="form">
+                <div id="firstname" class="form-item">
+                    <label>First Name</label>
+                    <div id="firstname-input-div">
+                        <input type="text" id="firstname-input" name="First Name" placeholder="">
+                    </div>
+                </div>
+                <div id="lastname" class="form-item">
+                    <label>Last Name</label>
+                    <div>
+                        <input type="text" id="lastname-imput" name="Last Name" placeholder="">
+                    </div>
+                </div>
+                <div id="email" class="form-item">
+                    <label>E-mail</label>
+                    <div id="email-input-div">
+                        <input type="text" id="email-input" name="E-mail" placeholder="">
+                        <select name="text" id="email-option">
+                            <option value="">@gmail.com</option>
+                            <option value="">@hotmail.com</option>
+                            <option value="">@outlook.com</option>
+                            <option value="">@icloud.com</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="phone" class="form-item">
+                    <label>Phone</label>
+                    <div>
+                        <input type="text" id="phone-input" name="Phone" placeholder="">
+                    </div>
+                </div>
+                <div id="reason" class="form-item">
+                    <label>Reason</label>
+                    <div>
+                        <select name="Reason" id="reason-input">
+                            <option value="Order">Make an order</option>
+                            <option value="Website bug">Website bug</option>
+                            <option value="Suggestion">Suggestion</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="message" class="form-item">
+                    <label>Message</label>
+                    <div>
+                        <textarea name="text" id="message-input" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div id="button-div">
+                    <input type="button" id="send-button" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="all-sections">
+            <p>Created by Ömer Faruk Güven - 2021</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="website.js"></script>
+</body>
+
+</html>
